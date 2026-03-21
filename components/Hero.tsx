@@ -20,7 +20,7 @@ export default function Hero() {
       </p>
 
       <div className="hero-actions">
-        <a href="https://kaminify.com" className="btn-primary">
+        <a href="https://app.kaminify.com" className="btn-primary">
           Try it free
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path

@@ -12,7 +12,7 @@ export default function CtaSection() {
         generation.
       </p>
       <div className="hero-actions reveal">
-        <a href="https://kaminify.com" className="btn-primary">
+        <a href="https://app.kaminify.com" className="btn-primary">
           Launch Kaminify
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path
@@ -24,7 +24,7 @@ export default function CtaSection() {
             />
           </svg>
         </a>
-        <a href="mailto:hello@kaminify.com" className="btn-secondary">
+        <a href="mailto:hello@app.kaminify.com" className="btn-secondary">
           Talk to us
         </a>
       </div>

@@ -25,7 +25,10 @@ export default function Pricing() {
             <li>Unlimited runs</li>
             <li>Unlimited pages</li>
           </ul>
-          <a href="https://kaminify.com" className="btn-pricing-secondary">
+          <a
+            href="https://app..app..app..app.kaminify.com"
+            className="btn-pricing-secondary"
+          >
             Try demo
           </a>
         </div>
@@ -68,7 +71,10 @@ export default function Pricing() {
             <li className="included">Run history</li>
             <li className="included">Email support</li>
           </ul>
-          <a href="mailto:hello@kaminify.com" className="btn-pricing-secondary">
+          <a
+            href="mailto:mail@shanewilkey.com"
+            className="btn-pricing-secondary"
+          >
             Join waitlist
           </a>
         </div>
