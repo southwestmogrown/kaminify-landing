@@ -9,7 +9,7 @@ export default function Nav() {
         <li><a href="#how-it-works">How it works</a></li>
         <li><a href="#use-cases">Use cases</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="https://app.kaminify.com" className="nav-cta">Try free</a></li>
+        <li><a href="https://kaminify.com" className="nav-cta">Try free</a></li>
       </ul>
     </nav>
   )
