@@ -16,8 +16,13 @@ export default function Nav() {
           <a href="#pricing">Pricing</a>
         </li>
         <li>
-          <a href="https://app.kaminify.com" className="nav-cta">
-            Try free
+          <a href="https://app.kaminify.com/sign-in" className="nav-signin">
+            Sign in
+          </a>
+        </li>
+        <li>
+          <a href="https://app.kaminify.com/sign-up" className="nav-cta">
+            Sign up free
           </a>
         </li>
       </ul>

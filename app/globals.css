@@ -125,6 +125,19 @@ nav {
 
 .nav-cta:hover { opacity: 0.85; }
 
+.nav-signin {
+  color: var(--text-muted) !important;
+  border: 1px solid var(--border) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: color 0.2s, border-color 0.2s !important;
+}
+
+.nav-signin:hover {
+  color: var(--text) !important;
+  border-color: var(--text-muted) !important;
+}
+
 /* ── Hero ── */
 .hero {
   position: relative;
