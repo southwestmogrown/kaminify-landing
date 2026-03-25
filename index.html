@@ -40,7 +40,7 @@
         --accent-dim: rgba(249, 115, 22, 0.15);
         --accent-glow: rgba(249, 115, 22, 0.06);
         --text: #e8e6e0;
-        --text-muted: #6b6a65;
+        --text-muted: #9e9d98;
         --text-dim: #3d3c38;
         --teal: #1d9e75;
         --teal-dim: rgba(29, 158, 117, 0.12);
@@ -1043,9 +1043,8 @@
       <ul class="nav-links">
         <li><a href="#how-it-works">How it works</a></li>
         <li><a href="#use-cases">Use cases</a></li>
-        <li><a href="#pricing">Pricing</a></li>
         <li>
-          <a href="https://app.kaminify.com" class="nav-cta">Try free</a>
+          <a href="https://app.kaminify.com" class="nav-cta">Get started</a>
         </li>
       </ul>
     </nav>
@@ -1054,7 +1053,7 @@
     <section class="hero">
       <div class="hero-glow"></div>
 
-      <div class="hero-badge">Powered by Claude · Multi-page generation</div>
+      <div class="hero-badge">Now in beta · 3 free runs · No sign-up required</div>
 
       <h1>Clone any site's design.<br /><em>Keep your content.</em></h1>
 
@@ -1066,7 +1065,7 @@
 
       <div class="hero-actions">
         <a href="https://app.kaminify.com" class="btn-primary">
-          Try it free
+          Try it now
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path
               d="M1 7h12M8 3l4 4-4 4"
@@ -1077,7 +1076,6 @@
             />
           </svg>
         </a>
-        <a href="#how-it-works" class="btn-secondary">See how it works</a>
       </div>
 
       <!-- Demo Visual -->
@@ -1091,7 +1089,7 @@
           <div class="demo-body">
             <div class="demo-url-box">
               <div class="demo-url-label">Design source</div>
-              <div class="demo-url-value design">stripe.com</div>
+              <div class="demo-url-value design">vercel.com</div>
             </div>
             <div class="demo-arrow">
               <div class="demo-arrow-icon">⇄</div>
@@ -1099,7 +1097,7 @@
             </div>
             <div class="demo-url-box">
               <div class="demo-url-label">Content source</div>
-              <div class="demo-url-value content">github.com/shanewilkey</div>
+              <div class="demo-url-value content">tailwindcss.com/docs</div>
             </div>
           </div>
           <div class="demo-progress">
@@ -1188,20 +1186,18 @@
       <div class="features reveal">
         <div class="feature">
           <span class="feature-tag">Architecture</span>
-          <h3>Server-Sent Events streaming</h3>
+          <h3>Live streaming preview</h3>
           <p>
-            The pipeline runs server-side and streams progress events to your
-            browser in real time. You see every step as it happens — no black
-            box, no waiting.
+            Pages appear in the preview as they finish generating — streamed directly to your
+            browser via SSE. No black box, no waiting for the full batch.
           </p>
         </div>
         <div class="feature">
           <span class="feature-tag">Privacy</span>
           <h3>Bring your own API key</h3>
           <p>
-            Your Anthropic API key stays in your browser session. It's passed
-            directly to the generation pipeline and never stored on our servers.
-            You control your costs and your data.
+            BYOK mode: pass your own Anthropic key directly to the pipeline — never stored on our
+            servers, unlimited generation. Or try anonymously with server-enforced free runs.
           </p>
         </div>
         <div class="feature">
@@ -1220,6 +1216,23 @@
             Kaminify doesn't just copy HTML. It extracts the semantic design
             system — color relationships, spacing ratios, typography hierarchy —
             and applies it intelligently to your content structure.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="feature-tag">Compatibility</span>
+          <h3>Works with JS-rendered SPAs</h3>
+          <p>
+            Static sites, React, Vue, Next.js — Kaminify handles both server-rendered and
+            JavaScript-heavy pages. JS-rendered sites are captured via headless Chrome and
+            processed with Claude Sonnet.
+          </p>
+        </div>
+        <div class="feature">
+          <span class="feature-tag">Models</span>
+          <h3>Choose your model</h3>
+          <p>
+            Pick Haiku for fast cheap generations, Sonnet for balanced quality, or Opus for the
+            highest quality output. Model selection is available with your own API key.
           </p>
         </div>
       </div>
@@ -1303,89 +1316,16 @@
 
     <hr class="divider" />
 
-    <!-- Pricing -->
-    <section class="section" id="pricing">
-      <span class="section-label reveal">Pricing</span>
-      <h2 class="section-title reveal">Start free. Scale when you need to.</h2>
-      <p class="section-sub reveal">
-        Demo mode is free with no account required. Bring your own Anthropic key
-        for unlimited generation. Paid tiers coming soon.
-      </p>
-
-      <div class="pricing-grid">
-        <div class="pricing-card reveal">
-          <span class="pricing-tier">Demo</span>
-          <div class="pricing-price">Free</div>
-          <p class="pricing-desc">
-            No account. No API key. See it work before you commit.
-          </p>
-          <ul class="pricing-features">
-            <li class="included">3 runs per session</li>
-            <li class="included">Up to 3 pages per run</li>
-            <li class="included">Live preview</li>
-            <li class="included">ZIP download</li>
-            <li>Unlimited runs</li>
-            <li>Unlimited pages</li>
-          </ul>
-          <a href="https://app.kaminify.com" class="btn-pricing-secondary"
-            >Try demo</a
-          >
-        </div>
-
-        <div class="pricing-card featured reveal">
-          <div class="pricing-badge">Available now</div>
-          <span class="pricing-tier">BYOK</span>
-          <div class="pricing-price">Free <span>with your key</span></div>
-          <p class="pricing-desc">
-            Use your own Anthropic API key. Unlimited runs, unlimited pages.
-          </p>
-          <ul class="pricing-features">
-            <li class="included">Unlimited runs</li>
-            <li class="included">Unlimited pages per run</li>
-            <li class="included">Live preview</li>
-            <li class="included">ZIP download</li>
-            <li class="included">Your key, your costs</li>
-            <li class="included">No data stored</li>
-          </ul>
-          <a href="https://app.kaminify.com" class="btn-pricing-primary"
-            >Get started free</a
-          >
-        </div>
-
-        <div class="pricing-card reveal">
-          <span class="pricing-tier">Pro</span>
-          <div class="pricing-price">$49 <span>/ mo</span></div>
-          <p class="pricing-desc">
-            Our key. No setup. Priority generation and higher page limits.
-          </p>
-          <ul class="pricing-features">
-            <li class="included">Unlimited runs</li>
-            <li class="included">Up to 20 pages per run</li>
-            <li class="included">No API key needed</li>
-            <li class="included">Priority queue</li>
-            <li class="included">Run history</li>
-            <li class="included">Email support</li>
-          </ul>
-          <a href="mailto:hello@app.kaminify.com" class="btn-pricing-secondary"
-            >Join waitlist</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
     <!-- Final CTA -->
     <section class="cta-section">
       <div class="cta-glow"></div>
       <h2 class="reveal">Two URLs.<br />One complete site.</h2>
       <p class="reveal">
-        No account required to try. Bring your Anthropic key for unlimited
-        generation.
+        Free to sign up. Bring your Anthropic key for unlimited generation.
       </p>
       <div class="hero-actions reveal">
         <a href="https://app.kaminify.com" class="btn-primary">
-          Launch Kaminify
+          Try it now
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path
               d="M1 7h12M8 3l4 4-4 4"
@@ -1396,9 +1336,6 @@
             />
           </svg>
         </a>
-        <a href="mailto:hello@app.kaminify.com" class="btn-secondary"
-          >Talk to us</a
-        >
       </div>
     </section>
 
@@ -1407,10 +1344,9 @@
       <a href="/" class="footer-logo">Kaminify</a>
       <ul class="footer-links">
         <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
         <li><a href="mailto:hello@app.kaminify.com">Contact</a></li>
       </ul>
-      <span class="footer-copy">© 2025 Kaminify. Built with Claude.</span>
+      <span class="footer-copy">© 2026 Kaminify. Built with Claude.</span>
     </footer>
 
     <script>
